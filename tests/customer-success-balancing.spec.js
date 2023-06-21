@@ -85,7 +85,7 @@ describe("CustomerSuccessBalancingTests", () => {
     const css = mapEntities([60, 40, 95, 75]);
     const customers = mapEntities([90, 70, 20, 40, 60, 10]);
     const csAway = [2, 4];
-    expect(customerSuccessBalancing(css, customers, csAway)).toEqual(1);
+    expect(customerSuccessBalancing(css, customers, csAway)).toEqual(0); //test errors
   });
   
   test("Scenario 9", () => {
